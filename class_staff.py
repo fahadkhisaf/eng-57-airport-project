@@ -1,7 +1,7 @@
 
 
 class Staff:
-    def __init__(self, full_name='',airline_with, role ,dob, tax_no='',nationality):
+    def __init__(self, full_name ,airline_with, role ,dob, tax_no ,nationality):
         self.__full_name = full_name
         self.airline_with = airline_with
         self.role = role
