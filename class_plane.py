@@ -5,14 +5,21 @@ class Plane:
         self.plane_model = plane_model
         self.airline_name = airline_name
         self.__flight_no = flight_no
-        self.capacity = capacity
+        self.capacity = int(capacity)
 
+    def get_plane_model(self):
+        return self.plane_model
+
+    def get_airline_name(self):
+        return self.airline_name
 
     def get_flight_no(self):
         return self.__flight_no
 
-    def set_flight_no(self, flight_no):
-        self.__flight_no = flight_no
+    def get_capacity(self):
+        return self.capacity
+
+
 
 
 
