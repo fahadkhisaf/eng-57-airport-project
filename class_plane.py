@@ -11,8 +11,8 @@ class Plane:
     def get_flight_no(self):
         return self.__flight_no
 
-    def set_flight_no(self):
-        return self.__flight_no
+    def set_flight_no(self, flight_no):
+        self.__flight_no = flight_no
 
 
 

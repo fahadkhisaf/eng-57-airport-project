@@ -3,7 +3,8 @@ from cities_class import *
 from class_staff import *
 
 flight = City("Air bus A380","Turkish Airlines", 788671 ,200,"Istanbul", "4 hours")
-employee = Staff("James Bond","British Airway","Pilot","07/07/1982", "707", "British")
+employee1 = Staff("James Smith", "British Airway", "Pilot", "07/07/1982", 707, "British", 110000)
+employee2 = Staff("Sarah Davis", "British Airways", "Cabin crew","04/11/1992",876,"American",45000)
 
 
 #Flight test
@@ -21,16 +22,17 @@ employee = Staff("James Bond","British Airway","Pilot","07/07/1982", "707", "Bri
 # pass
 
 #Staff test
-print(employee.get_full_name())
+print(employee1.get_full_name())
 #pass
-print(employee.get_airline_with())
+print(employee1.get_airline_with())
 #pass
-print(employee.get_tax_no())
+print(employee1.get_tax_no())
 #pass
-print(employee.get_nationality())
+print(employee1.get_nationality())
 #pass
-print(employee.get_dob())
+print(employee1.get_dob())
 #pass
+print((employee1.get_salary()))
 
 
 
