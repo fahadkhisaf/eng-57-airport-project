@@ -9,6 +9,8 @@ class Flight(Plane):
         self.flight_date = flight_date
         self.available_seats = available_seats
         self.manifest = manifest
+        if manifest is None:
+            self.manifest = []
 
     def delay(self, new_time):
         self.departure = new_time
@@ -31,3 +33,7 @@ class Flight(Plane):
         print(f"\nManifest for personnel on flight {self.flight}: ")
         for person in self.manifest:
             print(vars(person))
+
+pioneer = Flight('Pioneer', '0800', 'Paris', '1h20', 'A320', 150)
+taurus = Flight('Taurus', '0815', 'Munich', '1h50', 'A321', 200)
+achilles = Flight('Achilles', '0820', 'Dusseldorf', '1h35', 'A320', 150)

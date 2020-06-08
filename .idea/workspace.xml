@@ -20,14 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="518a7ebc-7b58-4656-81e1-58cd61cd03f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/passenger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run_check-in.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cities_class.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/class_plane.py" beforeDir="false" afterPath="$PROJECT_DIR$/class_plane.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/class_staff.py" beforeDir="false" afterPath="$PROJECT_DIR$/class_staff.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flight_trip.py" beforeDir="false" afterPath="$PROJECT_DIR$/flight_trip.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/people.py" beforeDir="false" afterPath="$PROJECT_DIR$/people.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_file.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +51,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../eng-57-oop/Monster_inc_excercise" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../eng-57-pyodbc" />
   </component>
   <component name="RunManager" selected="Python.passenger">
     <configuration name="cities_class" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -205,10 +203,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1591550895279" />
-    <state x="741" y="96" key="FileChooserDialogImpl" timestamp="1591554774617">
+    <state x="741" y="96" key="FileChooserDialogImpl" timestamp="1591619277342">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="741" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1591554774617" />
+    <state x="741" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1591619277342" />
     <state width="1259" height="162" key="GridCell.Tab.0.bottom" timestamp="1591563636844">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

@@ -1,55 +1,79 @@
+from random import randint
+
 from people import *
 
 class Passenger(People):
-    def __init__(self, full_name, tax_no, over_18, dob, passport_no, ticket_class = None,ticket_price = None):
-        super().__init__(full_name, tax_no, over_18)
-        self.__dob = dob
-        self.__passport_no = passport_no
-        self.ticket_class = ticket_class
+
+    def __init__(self, full_name, dob, nationality, passport_no, passenger_id=None, ticket_type=None, ticket_price=None,
+                 boarding_pass=None):
+        super().__init__(full_name, dob, nationality)
+        self.boarding_pass = boarding_pass
+        self.passport_no = passport_no
+        self.passenger_id = passenger_id
+        self.ticket_type = ticket_type
         self.ticket_price = ticket_price
+        self.details = {}
 
-    def purchase_ticket(self,ticket_class):
-        if ticket_class == "First Class":
-            self.ticket_class = "First Class"
+    def purchase_ticket(self, ticket_type):
+        if ticket_type == "First":
+            self.ticket_type = "First"
             self.ticket_price = 1000
-            return "First Class"
+            self.set_boarding_pass()
 
-        elif ticket_class == "Business Class":
-            self.ticket_class = "Business Class"
-            self.ticket_price = 750
-            return "Business Class"
-
-        elif ticket_class == "Economy":
-            self.ticket_class = "Economy"
-            self.ticket_price = 300
-            return "Economy"
-
-        elif ticket_class == "Infant":
-            self.ticket_class = "Infant"
+        elif ticket_type == "Infant":
+            self.ticket_type = "Infant"
             self.ticket_price = 0
-            return "Infant"
+            self.set_boarding_pass()
 
-    def get_dob(self):
-        return self.__dob
+        elif ticket_type == "Economy":
+            self.ticket_type = "Economy"
+            self.ticket_price = 300
+            self.set_boarding_pass()
 
-    def get_passport_no(self):
-        return self.__passport_no
+    def get_boarding_pass(self):
+        return self.boarding_pass
 
-    def set_passport_no(self, passport_no):
-        self.__passport_no = passport_no
-        passenger_name = self.get_full_name()
-        print(f"{passenger_name}, Your name has been added.\n Passport Number: {self.passport_no}")
+    def set_boarding_pass(self):
+        if self.ticket_type == "First":
+            new_bp = "BA-1", str(randint(99, 999)), "-", str(randint(999, 9999))
+            self.boarding_pass = ''.join(new_bp)
+        elif self.ticket_type == "Infant":
+            new_bp = "BA-9", str(randint(99, 999)), "-", str(randint(999, 9999))
+            self.boarding_pass = ''.join(new_bp)
+        elif self.ticket_type == "Economy":
+            new_bp = "BA-2", str(randint(99, 999)), "-", str(randint(999, 9999))
+            self.boarding_pass = ''.join(new_bp)
 
-    def get_ticket_class(self):
-        print(f"{self.ticket_class} ticket, price: {self.ticket_price}")
+    def get_passport_number(self):
+        return self.passport_no
+
+    def set_passport_number(self, new_pp):
+        self.passport_no = new_pp
+        name = self.get_full_name()
+        return f"Passport number updated for passenger:   {name}\n New number:   {self.passport_no}"
+
+    def get_ticket_type(self):
+        return self.ticket_type
 
     def set_ticket_type(self, new_ticket):
-        self.ticket_class = new_ticket
-        passenger_name = self.get_full_name()
-        print(f"Ticket type updated for passenger: {passenger_name},\n Ticket class :{self.ticket_class}")
+        self.ticket_type = new_ticket
+        name = self.get_full_name()
+        return f"Ticket type updated for passenger: {name}, to {self.ticket_type}"
+
+    def passenger_details(self):
+        self.details = {
+            "Name": self.get_full_name(),
+            "DOB": self.get_dob(),
+            "Nationality": self.nationality,
+            "Passport": self.passport_no,
+            "Ticket": self.ticket_type,
+            "Ticket Price": self.ticket_price,
+            "Boarding Pass": self.boarding_pass
+        }
+        for key, value in self.details.items():
+            print(f"{key}: {value}")
 
 
-#passenger1 = Passenger("Christian Bale",768777, True,"02/07/82","7888675GB")
-#print(passenger1.get_full_name())
-#passenger1.set_ticket_type("First Class")
-#passenger1.set_ticket_type("Economy"))
+passenger1 = Passenger('Patrick Clancy', '06/05/97', 'British', '73469573')
+passenger2 = Passenger('Georgina Hough', '31/07/98', 'British', '34392642')
+passenger3 = Passenger('Lauren Radtke', '08/04/16', 'Austria', '63856975')
