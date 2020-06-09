@@ -1,13 +1,17 @@
-from class_plane import *
+from class_airport import *
 
-class Flight(Plane):
-    def __init__(self,plane_model, airline_name,flight_no, capacity, destination, flight_time, flight_date, available_seats, manifest = None):
-        super().__init__(plane_model, airline_name,flight_no, capacity)
-        self.destination = destination
+
+class Flight(Airport):
+    instances = []
+
+    def __init__(self, flight, departure, destination, flight_time, plane, capacity, manifest=None):
+        self.flight = flight.capitalize()
+        self.departure = departure
+        Flight.instances.append(self.flight)
+        self.destination = destination.capitalize()
         self.flight_time = flight_time
-        self.flight_time = flight_date
-        self.flight_date = flight_date
-        self.available_seats = available_seats
+        self.plane = plane.capitalize()
+        self.capacity = capacity
         self.manifest = manifest
         if manifest is None:
             self.manifest = []
@@ -24,15 +28,17 @@ class Flight(Plane):
     def show_report(self):
         report = vars(self)
         for key, value in report.items():
-            print(key.capitalize(), ": ", value)
+            if key != "manifest":
+                print(key.capitalize(), ": ", value)
 
-    def append_manifest(self, passenger):
-        self.manifest.append(passenger)
+    def append_manifest(self, person):
+        self.manifest.append(person)
 
     def show_manifest(self):
         print(f"\nManifest for personnel on flight {self.flight}: ")
         for person in self.manifest:
             print(vars(person))
+
 
 pioneer = Flight('Pioneer', '0800', 'Paris', '1h20', 'A320', 150)
 taurus = Flight('Taurus', '0815', 'Munich', '1h50', 'A321', 200)

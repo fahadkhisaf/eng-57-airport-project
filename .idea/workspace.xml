@@ -20,11 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="518a7ebc-7b58-4656-81e1-58cd61cd03f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/run_check-in.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_airport.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/class_plane.py" beforeDir="false" afterPath="$PROJECT_DIR$/class_plane.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/class_staff.py" beforeDir="false" afterPath="$PROJECT_DIR$/class_staff.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flight_trip.py" beforeDir="false" afterPath="$PROJECT_DIR$/flight_trip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/passenger.py" beforeDir="false" afterPath="$PROJECT_DIR$/passenger.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/people.py" beforeDir="false" afterPath="$PROJECT_DIR$/people.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,28 +54,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../eng-57-pyodbc" />
   </component>
-  <component name="RunManager" selected="Python.passenger">
-    <configuration name="cities_class" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="eng-57-airport-project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cities_class.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.run_check-in">
     <configuration name="class_staff" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="eng-57-airport-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -138,6 +118,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="run_check-in" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="eng-57-airport-project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_check-in.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="run_file" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="eng-57-airport-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -161,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run_check-in" />
         <item itemvalue="Python.passenger" />
         <item itemvalue="Python.people" />
         <item itemvalue="Python.class_staff" />
         <item itemvalue="Python.run_file" />
-        <item itemvalue="Python.cities_class" />
       </list>
     </recent_temporary>
   </component>
@@ -207,22 +208,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="741" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1591619277342" />
-    <state width="1259" height="162" key="GridCell.Tab.0.bottom" timestamp="1591563636844">
+    <state width="1259" height="162" key="GridCell.Tab.0.bottom" timestamp="1591692566578">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="162" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1591563636844" />
-    <state width="1259" height="162" key="GridCell.Tab.0.center" timestamp="1591563636844">
+    <state width="1259" height="162" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1591692566578" />
+    <state width="1259" height="162" key="GridCell.Tab.0.center" timestamp="1591692566578">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="162" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1591563636844" />
-    <state width="1259" height="162" key="GridCell.Tab.0.left" timestamp="1591563636844">
+    <state width="1259" height="162" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1591692566578" />
+    <state width="1259" height="162" key="GridCell.Tab.0.left" timestamp="1591692566578">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="162" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1591563636844" />
-    <state width="1259" height="162" key="GridCell.Tab.0.right" timestamp="1591563636844">
+    <state width="1259" height="162" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1591692566578" />
+    <state width="1259" height="162" key="GridCell.Tab.0.right" timestamp="1591692566578">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="162" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1591563636844" />
+    <state width="1259" height="162" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1591692566578" />
     <state width="1259" height="204" key="GridCell.Tab.1.bottom" timestamp="1591536871274">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

@@ -1,6 +1,6 @@
 import time
 from passenger import *
-from staff import *
+from class_staff import *
 from flight_trip import *
 
 

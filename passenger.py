@@ -1,6 +1,7 @@
 from random import randint
 
-from people import *
+from class_people import *
+
 
 class Passenger(People):
 

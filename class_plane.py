@@ -1,5 +1,6 @@
+from class_airport import *
 
-class Plane:
+class Plane(Airport):
     def __init__(self, plane_model, airline, flight_no, capacity):
         self.plane_model = plane_model
         self.airline_name = airline
@@ -14,6 +15,7 @@ class Plane:
         print(f"Flight number allocated to plane:  {self.plane_model} updated to: {self.__flight_no}")
 
 
+# planes
 airbus0 = Plane("A320", "BA", 10000, 150)
 airbus1 = Plane("A320", "BA", 10001, 150)
 airbus2 = Plane("A320", "BA", 10002, 150)

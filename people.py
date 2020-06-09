@@ -1,4 +1,8 @@
-class People:
+from class_airport import *
+
+
+class People(Airport):
+
     def __init__(self, full_name, dob, nationality):
         self.__name = full_name
         self.__dob = dob
@@ -27,12 +31,5 @@ class People:
 
 
 
-## Testing in progress
-
-#person = People("fahad khisaf", 788671, True)
-#print(person.get_full_name())
-#print(person.nationality)
-#print(person.get_tax_no())
-# all pass
 
 

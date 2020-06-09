@@ -1,6 +1,8 @@
-from people import  *
+from class_people import *
+
 
 class Staff(People):
+
     def __init__(self, full_name, airline, title, dob, tax_no, nationality):
         super().__init__(full_name, dob, nationality)
         self.airline = airline
@@ -32,6 +34,7 @@ class Staff(People):
         name = self.get_full_name()
         print(f"Tax number updated for person:   {name}\nNew tax no:   {self.__tax_no}")
 
+
     def staff_details(self):
         self.details = {
             "Name": self.get_full_name(),
@@ -44,9 +47,7 @@ class Staff(People):
         for key, value in self.details.items():
             print(key, ": ", value)
 
-    # STAFF ROSTER
-
-
+# STAFF ROSTER
 crew1 = Staff('Steve Martin', 'BA', 'Cabin Crew', '17/06/89', 7305734, 'USA')
 crew2 = Staff('Caragh Cowan', 'BA', 'Cabin Crew', '29/05/95', 4846473, 'Kenya')
 crew3 = Staff('Chloe McDonald', 'BA', 'Cabin Crew', '29/11/97', 9384322, 'UK')
@@ -61,7 +62,6 @@ copilot1 = Staff('Wessel Withoos', 'BA', 'Copilot', '20/03/92', 6229163, 'Nether
 copilot2 = Staff('Fabio Capello', 'BA', 'Copilot', '23/04/82', 5528631, 'Italy')
 copilot3 = Staff('Wanda McVey', 'American Airlines', 'Copilot', '07/02/88', 7583957, 'USA')
 copilot4 = Staff('James Jamison', 'BA', 'Copilot', '04/01/86', 6202775, 'UK')
-
 
 
 
